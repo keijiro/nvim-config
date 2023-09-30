@@ -57,36 +57,6 @@ return {
   },
   -- }}}
 
-  -- CMP {{{
-  {
-    'hrsh7th/nvim-cmp',
-    event = "InsertEnter",
-    dependencies = {
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip',
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-path',
-      'hrsh7th/cmp-emoji',
-      'hrsh7th/cmp-nvim-lsp-signature-help',
-      'hrsh7th/cmp-nvim-lua',
-      'rafamadriz/friendly-snippets',
-    },
-    config = function()
-      require "extensions.cmp"
-    end
-  },
-  -- }}}
-
-  -- LSP Kind {{{
-  {
-    'onsails/lspkind-nvim',
-    lazy = true,
-    config = function()
-      require "extensions.lspkind"
-    end
-  },
-  -- }}}
-
   -- Git Signs{{{
   {
     'lewis6991/gitsigns.nvim',
@@ -94,17 +64,6 @@ return {
     config = function()
       require "extensions.gitsigns"
     end
-  },
-  -- }}}
-
-  -- Trouble {{{
-  {
-    "folke/trouble.nvim",
-    lazy = true,
-    dependencies = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require "extensions.trouble"
-    end,
   },
   -- }}}
 
