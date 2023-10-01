@@ -3,6 +3,14 @@ require "helpers/keyboard"
 
 g.mapleader = ' '                                                                 -- Use Space, like key for alternative hotkeys
 
+-- Terminal Mode {{{
+vim.cmd("tnoremap <Esc> <C-\\><C-n>")
+-- }}}
+
+-- Floaterm {{{
+nm('<leader>t', '<cmd>FloatermToggle<CR>')                                    -- Show all buffers
+-- }}}
+
 -- Telescope {{{
 nm('gd', '<cmd>Telescope lsp_definitions<CR>')                            -- Goto declaration
 nm('<leader>p', '<cmd>Telescope resume<CR>')
@@ -13,7 +21,6 @@ nm('<leader>b', '<cmd>Telescope git_branches<CR>')                              
 nm('<leader>f', '<cmd>Telescope live_grep<CR>')                                  -- Find a string in project
 nm('<leader>q', '<cmd>Telescope buffers<CR>')                                    -- Show all buffers
 nm('<leader>a', '<cmd>Telescope<CR>')                                            -- Show all commands
-nm('<leader>t', '<cmd>Telescope lsp_dynamic_workspace_symbols<CR>')              -- Search for dynamic symbols
 -- }}}
 
 -- Neo Tree {{{

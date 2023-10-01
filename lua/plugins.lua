@@ -28,6 +28,10 @@ return {
   },
   -- }}}
 
+  -- Floaterm {{{
+  { "voldikss/vim-floaterm" },
+  -- }}}
+
   -- Neo Tree {{{
   {
     "nvim-neo-tree/neo-tree.nvim",
