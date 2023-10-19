@@ -8,6 +8,11 @@
 require "helpers/globals"
 
 return {
+
+  -- ShaderHighlight {{{
+  { "kalvinpearce/ShaderHighlight" },
+  -- }}}
+
   -- Bufferline {{{
   {
     "akinsho/bufferline.nvim",
