@@ -21,4 +21,6 @@ require("catppuccin").setup({
     },
 })
 
-vim.cmd("colorscheme catppuccin")
+if fn.has('macunix') == 0 then
+  vim.cmd("colorscheme catppuccin")
+end
