@@ -14,7 +14,7 @@ cmd[[autocmd FileType * setlocal formatoptions-=cro]]
 
 opt.colorcolumn = "80"
 opt.wrap = false
-opt.termguicolors = fn.has('macunix') == 0
+opt.termguicolors = true
 
 -- Tabs {{{
 opt.expandtab = true                -- Use spaces by default
