@@ -88,6 +88,16 @@ return {
   },
   -- }}}
 
+  -- Neogit {{{
+  {
+    "NeogitOrg/neogit",
+    dependencies = "nvim-lua/plenary.nvim",
+    config = function ()
+      require "extensions.neogit"
+    end
+  },
+  -- }}}
+
   -- Theme: Catppuccin {{{
   {
     "catppuccin/nvim",
